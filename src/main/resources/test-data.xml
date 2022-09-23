@@ -1,0 +1,8 @@
+<Countries>
+    <country id="russia" name="Russian Federation" code="RU" language="russian"/>
+    <country id="usa" name="United States of America" code="US" language="english"/>
+    <country id="china" name="China" code="CH" language="chinese"/>
+    <country id="england" name="England" code="EN" language="english"/>
+    <country id="france" name="France" code="FR" language="france"/>
+    <country id="spain" name="Spain" code="SP" language="hz"/>
+</Countries>
