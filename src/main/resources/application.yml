@@ -7,7 +7,7 @@ spring:
     stream:
       bindings:
         testProducer-out-0:
-          destination: ....
+          destination: demo_country
       kafka:
         binder:
           brokers: ${kafka_brokers:localhost}

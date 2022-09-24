@@ -17,7 +17,7 @@ private class ParseServiceImpl(
     private val streamBridge: StreamBridge
 ) : ParseService {
 
-    private val testFilePath = "test-data.xml"
+    private val testFilePath = "/Users/nikolayanikeev/IdeaProjects/fias-loader/src/main/resources/test-data.xml"
 
     override fun testParse() {
         val xmlMapper = XmlMapper()
@@ -33,7 +33,7 @@ private class ParseServiceImpl(
                         .withPayload(country)
                         .setHeader(KafkaHeaders.MESSAGE_KEY, country.id)
                         .build()
-                    streamBridge.send("demo_country", message)
+                    streamBridge.send("testProducer-out-0", message)
                 }
             }
         }
